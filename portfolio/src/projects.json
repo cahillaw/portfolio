@@ -1,0 +1,54 @@
+{
+    "projects" : [
+        {
+            "name": "Statements",
+            "description": "desc",
+            "timeStart": "January 2020",
+            "timeEnd": "February 2020", 
+            "bullets": [
+                "swag",
+                "swag2,"
+            ],
+            "tags" : [
+                "React",
+                "Go"
+            ],
+            "images" : [
+                { 
+                    "main": "/images/",
+                    "gallery": [
+                        "/images/2",
+                        "/images/3"
+                    ]
+                    
+                } 
+            ]
+        },
+        {
+            "name": "Num2",
+            "description": "desc",
+            "timeStart": "January 2020",
+            "timeEnd": "February 2021", 
+            "bullets": [
+                "swag",
+                "swag2,"
+            ],
+            "tags" : [
+                "React",
+                "Go",
+                "Java"
+            ],
+            "images" : [
+                { 
+                    "main": "/images/",
+                    "gallery": [
+                        "/images/2",
+                        "/images/3"
+                    ]
+                    
+                } 
+            ]
+        }
+    ]
+  }
+  
