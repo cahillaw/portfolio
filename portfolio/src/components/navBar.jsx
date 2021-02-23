@@ -18,18 +18,19 @@ export class NavBar extends Component {
 
   render() {
     return (
-        <Navbar expand="xl" className="color-nav" variant="light">
-            <Container className = "navcontainer">
-                <Navbar.Brand className="extend" href = "/">
-                    <strong>Andy Cahill</strong>
-                </Navbar.Brand>
+      <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
+        <Container className = "navcontainer">
+          <Navbar.Brand href="/">Andy Cahill</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/">About Me</Nav.Link>
-                    <Nav.Link href="/skills">Skills</Nav.Link>
-                    <Nav.Link href="/projects">Projects</Nav.Link>
-                    <Nav.Link href="/contact">Contact</Nav.Link>
+                  <Nav.Link href="/">About Me</Nav.Link>
+                  <Nav.Link href="/skills">Skills</Nav.Link>
+                  <Nav.Link href="/projects">Projects</Nav.Link>
+                  <Nav.Link href="/contact">Contact</Nav.Link>
                 </Nav>  
-            </Container>
+              </Navbar.Collapse>
+          </Container>
         </Navbar>
     );
 

@@ -1,5 +1,8 @@
 import React from 'react'
 
+import { Image } from 'react-bootstrap'
+import './css/home.css'
+
 class Home extends React.Component {
     constructor (props) {
     super(props)
@@ -16,6 +19,7 @@ class Home extends React.Component {
        
       return (
           <div>
+            <div className="banner"></div>
         Hello
           </div>
       )
