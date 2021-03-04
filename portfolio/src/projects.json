@@ -1,7 +1,7 @@
 {
     "projects" : [
         {
-            "name": "Statements",
+            "name": "Num1",
             "description": "desc",
             "timeStart": "January 2020",
             "timeEnd": "February 2020", 
@@ -13,16 +13,16 @@
                 "React",
                 "Go"
             ],
-            "images" : [
+            "images" : 
                 { 
-                    "main": "/images/",
+                    "main": "/images/hikelandscape.jpg",
                     "gallery": [
                         "/images/2",
                         "/images/3"
                     ]
                     
                 } 
-            ]
+            
         },
         {
             "name": "Num2",
@@ -34,20 +34,93 @@
                 "swag2,"
             ],
             "tags" : [
-                "React",
                 "Go",
                 "Java"
             ],
-            "images" : [
+            "images" : 
                 { 
-                    "main": "/images/",
+                    "main": "/images/hikelandscape.jpg",
                     "gallery": [
                         "/images/2",
                         "/images/3"
                     ]
                     
                 } 
-            ]
+            
+        },
+        {
+            "name": "Num3",
+            "description": "desc",
+            "timeStart": "January 2020",
+            "timeEnd": "February 2020", 
+            "bullets": [
+                "swag",
+                "swag2,"
+            ],
+            "tags" : [
+                "React",
+                "Go"
+            ],
+            "images" : 
+                { 
+                    "main": "/images/hikelandscape.jpg",
+                    "gallery": [
+                        "/images/2",
+                        "/images/3"
+                    ]
+                    
+                } 
+            
+        },
+        {
+            "name": "Num4",
+            "description": "desc",
+            "timeStart": "January 2020",
+            "timeEnd": "February 2020", 
+            "bullets": [
+                "swag",
+                "swag2,"
+            ],
+            "tags" : [
+                "React",
+                "AWS"
+            ],
+            "images" : 
+                { 
+                    "main": "/images/hikelandscape.jpg",
+                    "gallery": [
+                        "/images/2",
+                        "/images/3"
+                    ]
+                    
+                } 
+            
+        },
+        {
+            "name": "Num5",
+            "description": "desc",
+            "timeStart": "January 2020",
+            "timeEnd": "February 2020", 
+            "bullets": [
+                "swag",
+                "swag2,"
+            ],
+            "tags" : [
+                "AWS",
+                "Go",
+                "Docker",
+                "R"
+            ],
+            "images" : 
+                { 
+                    "main": "/images/hikelandscape.jpg",
+                    "gallery": [
+                        "/images/2",
+                        "/images/3"
+                    ]
+                    
+                } 
+            
         }
     ]
   }
