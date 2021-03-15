@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { Container, Row, Col, Form, Card, Button, CardColumns, CardDeck, CardGroup } from 'react-bootstrap'
-import SearchBar from "material-ui-search-bar";
 import './css/projects.css'
 
 import puzzlesjson from "../projects.json"
@@ -36,12 +35,13 @@ class Projects extends React.Component {
             <Container className="pagelayout">
                 <Row>
                     <Col>
-                    <h1>My Projects</h1>
-                    <SearchBar
-                        className="searchbar"
-                        value={this.state.query}
-                        onChange={() => console.log("cahnge")}
-                        onRequestSearch={() => console.log("cahnge")}/>
+                    <h1>Projects</h1>
+                        <Form.Group controlId="search" className="searchbar">
+                            <Form.Control placeholder="Search..." onChange={this.updateQuery}/>
+                            <Form.Text className="text-muted">
+                            Search by project name, description or phrase.
+                            </Form.Text>
+                        </Form.Group>
                     </Col>
                 </Row>
                 <Row>
@@ -56,9 +56,9 @@ class Projects extends React.Component {
                         </Container>
                     </Col>
                     <Col xs={10}>
-                        <CardDeck>
+                        <CardDeck style={{marginBottom:"25px"}}>
                             {projects.map((project, i) => {
-                                return this.displayCard(project.tags) ?
+                                return this.displayCard(project) ?
                                     <Card style={{ minWidth: '18rem', maxWidth:'18rem', marginTop:"20px" }} key = {i}>
                                         <Card.Img variant="top" src={project.images.main} />
                                         <Card.Body>
@@ -81,6 +81,13 @@ class Projects extends React.Component {
       )
     }
 
+    updateQuery = (event) => {
+        console.log(event.target.value)
+        this.setState({
+          query: event.target.value.toLowerCase()
+        })
+      }
+
     updateTagFilter = (tag) => {
         var currentTags = this.state.filterTags
         if(currentTags.includes(tag)) {
@@ -98,20 +105,36 @@ class Projects extends React.Component {
         console.log(this.state.filterTags)
     }
 
-    displayCard = (projectTags) => {
+    displayCard = (project) => {
         var currentTags = this.state.filterTags
-        var display = true
-        if(currentTags.length < 1) { //if no tags, always return each card
-            return display
+        var display = false
+
+        if(this.state.query != "" && project.name.includes(this.state.query)) {
+            display = true 
         }
 
-        currentTags.map((tag) => {
-            if(!projectTags.includes(tag)) {
-                display = false
-            }
+        if(this.state.query != "" && project.description.includes(this.state.query)) {
+            display = true
+        }
 
+        project.bullets.map((bullet) => {
+            if(this.state.query != "" && bullet.includes(this.state.query)) {
+                display = true
+            }
         })
+
+        if(display) {
+            currentTags.map((tag) => {
+                if(!project.tags.includes(tag)) {
+                    display = false
+                }
+            })
+        }
         
+        if(this.state.query === "" && currentTags.length < 1) { //if no tags, always return each card
+            display = true
+        }
+
         return display
     }
 
