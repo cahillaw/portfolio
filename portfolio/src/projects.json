@@ -2,24 +2,30 @@
     "projects" : [
         {
             "projectId": 1,
-            "name": "Num1",
-            "description": "descdwad",
-            "timeStart": "January 2020",
-            "timeEnd": "February 2020", 
+            "name": "SmartShuffle.io",
+            "description": "SmartShuffle is a web application that allows Spotify users to create custom radio stations that let users better control how they shuffle music.",
+            "timeStart": "July 2020",
+            "timeEnd": "October 2020", 
             "bullets": [
-                "swag",
-                "swag2,"
+                "Each station is made up of many Spotify playlists with individual weights, allowing users to customize exactly how often they hear certain songs.",
+                "Full-stack application with Go for the backend API and React for the front-end. Users login with their Spotify account through OAuth, and their stations are saved in a MySQL database.",
+                "Self-learned many of the skills needed for the site including launching the service to the public, which taught me valuable information about privacy concerns, scalability, maintenance and more."
             ],
             "tags" : [
                 "React",
-                "Go"
+                "Go",
+                "AWS",
+                "Docker",
+                "OAuth"
             ],
             "images" : 
                 { 
-                    "main": "/images/hikelandscape.jpg",
+                    "main": "/images/ssmainss.PNG",
                     "gallery": [
-                        "/images/2",
-                        "/images/3"
+                        "/images/sseditmodalss.PNG",
+                        "/images/ssmobiless.PNG",
+                        "/images/ssnewplaylistss.PNG",
+                        "/images/ssstartss.PNG"
                     ]
                     
                 } 

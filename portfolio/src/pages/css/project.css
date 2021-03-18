@@ -2,3 +2,23 @@
     max-width: 500px;
     min-width: 200px;
 }
+
+.description {
+    font-weight: 500;
+}
+
+.bullets {
+    margin-top: 10px;
+}
+
+.tag {
+    margin-right:5px;
+}
+
+.badge {
+    font-weight: 600;
+}
+
+.galleryrow {
+    margin-top: 10px;
+}

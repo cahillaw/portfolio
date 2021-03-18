@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Container, Row, Col, Form, Card, Button, CardColumns, CardDeck, CardGroup } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import './css/projects.css'
 
 import puzzlesjson from "../projects.json"
@@ -67,7 +68,9 @@ class Projects extends React.Component {
                                         <Card.Text>
                                         {project.description}
                                         </Card.Text>
+                                        <Link to = {'/projects/' + project.projectId}>
                                         <Button variant="primary">View More</Button>
+                                        </Link>
                                         </Card.Body>
                                     </Card>
                             : null
@@ -123,13 +126,14 @@ class Projects extends React.Component {
             }
         })
 
-        if(display) {
-            currentTags.map((tag) => {
-                if(!project.tags.includes(tag)) {
-                    display = false
-                }
-            })
-        }
+        currentTags.map((tag) => {
+            if(!project.tags.includes(tag) && display) {
+                display = false
+            } else if (project.tags.includes(tag) && this.state.query === "") {
+                display = true
+            }
+        })
+        
         
         if(this.state.query === "" && currentTags.length < 1) { //if no tags, always return each card
             display = true
