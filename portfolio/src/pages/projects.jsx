@@ -4,7 +4,7 @@ import { Container, Row, Col, Form, Card, Button, CardColumns, CardDeck, CardGro
 import { Link } from 'react-router-dom'
 import './css/projects.css'
 
-import puzzlesjson from "../projects.json"
+import puzzlesjson from "../json/projects.json"
 
 class Projects extends React.Component {
     constructor (props) {
@@ -57,10 +57,10 @@ class Projects extends React.Component {
                         </Container>
                     </Col>
                     <Col xs={10}>
-                        <CardDeck style={{marginBottom:"25px"}}>
+                        <CardDeck className="projcarddeck">
                             {projects.map((project, i) => {
                                 return this.displayCard(project) ?
-                                    <Card style={{ minWidth: '18rem', maxWidth:'18rem', marginTop:"20px" }} key = {i}>
+                                    <Card className="projectcard" key = {i}>
                                         <Card.Img variant="top" src={project.images.main} />
                                         <Card.Body>
                                         <Card.Title>{project.name}</Card.Title>

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Container, Image, Row, Col, Card, CardColumns, Badge } from 'react-bootstrap'
-import puzzlesjson from "../projects.json"
+import puzzlesjson from "../json/projects.json"
 import './css/project.css'
 
 class Project extends React.Component {
@@ -46,6 +46,7 @@ class Project extends React.Component {
                                     return <li>{bullet}</li>
                                 })}
                             </ul>
+                            {this.state.project.link ? <p><strong>Site Link: </strong><a href = {this.state.project.link}>{this.state.project.link}</a></p> : null}
                         </Col>
                         <Col sm={6}>
                             <div className="mainimage">

@@ -1,0 +1,28 @@
+{
+    "skills" : [
+        {
+            "name": "React",
+            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "image": "/images/logos/reactlogo.png",
+            "site": "https://reactjs.org"
+        },
+        {
+            "name": "Go",
+            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "image": "/images/logos/gologo.png",
+            "site": "https://golang.org"
+        },
+        {
+            "name": "SQL",
+            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "image": "/images/logos/sqllogo.png",
+            "site": "https://https://en.wikipedia.org/wiki/SQL"
+        },
+        {
+            "name": "SQL",
+            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "image": "/images/logos/sqllogo.png",
+            "site": "https://https://en.wikipedia.org/wiki/SQL"
+        }
+    ]
+}

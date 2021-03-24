@@ -11,6 +11,7 @@
                 "Full-stack application with Go for the backend API and React for the front-end. Users login with their Spotify account through OAuth, and their stations are saved in a MySQL database.",
                 "Self-learned many of the skills needed for the site including launching the service to the public, which taught me valuable information about privacy concerns, scalability, maintenance and more."
             ],
+            "link": "https://smartshuffle.io",
             "tags" : [
                 "React",
                 "Go",
