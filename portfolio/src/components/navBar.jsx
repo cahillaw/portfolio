@@ -12,10 +12,6 @@ export class NavBar extends Component {
     }
   }
 
-  componentDidMount() {
-    console.log("nav")
-  }
-
   render() {
     return (
       <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">

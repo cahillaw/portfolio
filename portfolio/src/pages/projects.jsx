@@ -11,24 +11,30 @@ class Projects extends React.Component {
     super(props)
       this.state = {
           query: "",
-          filterTags: []
+          filterTags: [],
+          tags: [],
+          projects: [],
+          results: false
       }
     }
 
     componentDidMount() {
-        console.log(puzzlesjson)
+        const { projects } = puzzlesjson
+
+        const tagsSet = new Set()
+        projects.map((project) => {
+            project.tags.map((tag) => {
+                tagsSet.add(tag)
+            })
+        })
+        var tags = Array.from(tagsSet);
+        this.setState({
+            projects: projects,
+            tags: tags,
+        })
     }
 
     render = () => {
-    const { projects } = puzzlesjson
-
-    const tagsSet = new Set()
-    projects.map((project) => {
-        project.tags.map((tag) => {
-            tagsSet.add(tag)
-        })
-    })
-    var tags = Array.from(tagsSet);
 
     return (
         <div>
@@ -45,20 +51,20 @@ class Projects extends React.Component {
                         </Form.Group>
                     </Col>
                 </Row>
-                <Row>
-                    <Col xs={2}>
+                <Row className="projectscontent">
+                    <Col sm={1}>
                         <Container className="filters">
                             <h2>Tags</h2>
                             <Form.Group controlId="formBasicCheckbox">
-                                {tags.map((tag, i) => (
+                                {this.state.tags.map((tag, i) => (
                                     <Form.Check type="checkbox" label={tag} onChange={() => this.updateTagFilter(tag)} key = {i} />
                                 ))}
                             </Form.Group>
                         </Container>
                     </Col>
-                    <Col xs={10}>
+                    <Col sm={11}>
                         <CardDeck className="projcarddeck">
-                            {projects.map((project, i) => {
+                            {this.state.projects.map((project, i) => {
                                 return this.displayCard(project) ?
                                     <Card className="projectcard" key = {i}>
                                         <Card.Img variant="top" src={project.images.main} />
@@ -76,6 +82,8 @@ class Projects extends React.Component {
                             : null
                             })}
                         </CardDeck>
+                        {!this.state.results ? <h3 className="noresults">No results for the specified query. Try a broader search.</h3> : null}
+
                     </Col>
                 </Row>
 
@@ -87,7 +95,8 @@ class Projects extends React.Component {
     updateQuery = (event) => {
         console.log(event.target.value)
         this.setState({
-          query: event.target.value.toLowerCase()
+          query: event.target.value.toLowerCase(),
+          results: false
         })
       }
 
@@ -103,7 +112,8 @@ class Projects extends React.Component {
         }
 
         this.setState({
-            filterTags: currentTags
+            filterTags: currentTags,
+            results: false
         })
         console.log(this.state.filterTags)
     }
@@ -112,16 +122,16 @@ class Projects extends React.Component {
         var currentTags = this.state.filterTags
         var display = false
 
-        if(this.state.query != "" && project.name.includes(this.state.query)) {
+        if(this.state.query != "" && project.name.toLowerCase().includes(this.state.query)) {
             display = true 
         }
 
-        if(this.state.query != "" && project.description.includes(this.state.query)) {
+        if(this.state.query != "" && project.description.toLowerCase().includes(this.state.query)) {
             display = true
         }
 
         project.bullets.map((bullet) => {
-            if(this.state.query != "" && bullet.includes(this.state.query)) {
+            if(this.state.query != "" && bullet.toLowerCase().includes(this.state.query)) {
                 display = true
             }
         })
@@ -137,6 +147,12 @@ class Projects extends React.Component {
         
         if(this.state.query === "" && currentTags.length < 1) { //if no tags, always return each card
             display = true
+        }
+
+        if(display && !this.state.results) {
+            this.setState({
+                results: true
+            })
         }
 
         return display

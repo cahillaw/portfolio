@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container, Image, Row, Col, Card, CardColumns, Badge } from 'react-bootstrap'
+import { Container, Image, Row, Col, Card, CardColumns, Badge, Breadcrumb } from 'react-bootstrap'
 import puzzlesjson from "../json/projects.json"
 import './css/project.css'
 
@@ -17,12 +17,6 @@ class Project extends React.Component {
         const { projects } = puzzlesjson
         projects.map((project) => {
             if(project.projectId == projectId) {
-                console.log(project)
-                project.images.gallery.map((src)=>{
-                    console.log(src)
-                })
-
-
                 this.setState({
                     project: project
                 })
@@ -36,14 +30,23 @@ class Project extends React.Component {
             <div>
                 <div className="banner"></div>
                 <Container className="pagelayout" fluid>
+                    <Row className = "breadrow">
+                        <Breadcrumb>
+                            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+                            <Breadcrumb.Item href="/projects">
+                                Projects
+                            </Breadcrumb.Item>
+                            <Breadcrumb.Item active>{this.state.project.name}</Breadcrumb.Item>
+                        </Breadcrumb>
+                    </Row>
                     <Row>
                         <Col sm={6}>
                             <h1>{this.state.project.name}</h1>
                             <Card.Subtitle className="mb-2 text-muted">{this.state.project.timeStart} - {this.state.project.timeEnd}</Card.Subtitle>
                             <div className ="description">{this.state.project.description}</div>
                             <ul className="bullets">
-                                {this.state.project.bullets.map((bullet) => {
-                                    return <li>{bullet}</li>
+                                {this.state.project.bullets.map((bullet, i) => {
+                                    return <li key = {i}>{bullet}</li>
                                 })}
                             </ul>
                             {this.state.project.link ? <p><strong>Site Link: </strong><a href = {this.state.project.link}>{this.state.project.link}</a></p> : null}
@@ -57,8 +60,8 @@ class Project extends React.Component {
                     <Row>
                         <Col sm={6}>
                             <h3>Tags</h3>
-                            {this.state.project.tags.map((tag) => {
-                                return <Badge className = "tag" variant="dark">{tag}</Badge>
+                            {this.state.project.tags.map((tag, i) => {
+                                return <Badge className = "tag" variant="dark" key = {i}>{tag}</Badge>
                             })}
                         </Col>
                     </Row>
@@ -66,10 +69,11 @@ class Project extends React.Component {
                         <Col sm={12}>
                             <h3>Gallery</h3>
                             <CardColumns>
-                                {this.state.project.images.gallery.map((src) => {
-                                    return <Card>
+                                {this.state.project.images.gallery.map((src, i) => {
+                                    return (
+                                    <Card key = {i}>
                                         <Card.Img src={src} />
-                                    </Card>
+                                    </Card>)
                                 })}
                             </CardColumns>
                         </Col>

@@ -22,3 +22,12 @@
 .galleryrow {
     margin-top: 10px;
 }
+
+.breadcrumb {
+    background-color: white;
+}
+
+.breadrow {
+    margin-bottom: -10px;
+    margin-top: -5px;
+}

@@ -9,6 +9,15 @@
     margin-right: unset;
 }
 
+.noresults {
+    text-align: center;
+}
+
+
+.projectscontent {
+    margin-top: -10px;
+}
+
 .projectcard {
     min-width: 18rem;
     max-width: 18rem;
@@ -20,4 +29,15 @@
 .projcarddeck {
     justify-content: center;
     margin-bottom: 25px;
+}
+
+@media(max-width:766px) {
+    .filters {
+        display: none;
+    }
+
+    .col-sm-11 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
