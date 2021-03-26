@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import { NavBar } from './components/navBar';
+import { Footer } from './components/footer';
 //pages 
 
 import Home from './pages/home';
@@ -22,7 +23,8 @@ class App extends React.Component {
         <Route exact path = "/projects/:projectId" component={Project}/>
         <Redirect to ="/"/>
       </Switch>
-    </Router>
+      <Footer/>
+      </Router>
   }
 }
 

@@ -28,6 +28,15 @@
   color: #61dafb;
 }
 
+.pagelayout {
+  max-width: 1300px;
+  margin-top: 25px;
+}
+
+.content {
+  min-height: 79.3vh;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,0 +1,39 @@
+.footercontainer {
+    background-color: #282c34;
+    position: absolute;
+    max-width: unset;
+    padding-top: 10px;
+}
+
+.shortfootercontainer {
+    background-color: #282c34;
+    position: absolute;
+    max-width: unset;
+    padding-top: 10px;
+}
+
+.footertext {
+    color:#fff;
+    text-align: center;
+}
+
+.copycol {
+    align-items: center;
+    justify-content: center;
+}
+
+.centertext {
+    text-align: center;
+}
+
+.righttext {
+    text-align: right;
+}
+
+/*
+@media(max-width: 910px),(min-aspect-ratio:13/8) {
+    .shortfootercontainer {
+        bottom: unset
+    }
+}
+*/

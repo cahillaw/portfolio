@@ -19,9 +19,51 @@
             "site": "https://https://en.wikipedia.org/wiki/SQL"
         },
         {
-            "name": "SQL",
+            "name": "Python",
             "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
-            "image": "/images/logos/sqllogo.png",
+            "image": "/images/logos/pythonlogo.png",
+            "site": "https://https://en.wikipedia.org/wiki/SQL"
+        },
+        {
+            "name": "AWS",
+            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "image": "/images/logos/awslogo.png",
+            "site": "https://https://en.wikipedia.org/wiki/SQL"
+        },
+        {
+            "name": "Docker",
+            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "image": "/images/logos/dockerlogo.png",
+            "site": "https://https://en.wikipedia.org/wiki/SQL"
+        },
+        {
+            "name": "R",
+            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "image": "/images/logos/rlogo.png",
+            "site": "https://https://en.wikipedia.org/wiki/SQL"
+        },
+        {
+            "name": "Java",
+            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "image": "/images/logos/javalogo.png",
+            "site": "https://https://en.wikipedia.org/wiki/SQL"
+        },
+        {
+            "name": "MySQL",
+            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "image": "/images/logos/mysqllogo.png",
+            "site": "https://https://en.wikipedia.org/wiki/SQL"
+        },
+        {
+            "name": "Google Cloud",
+            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "image": "/images/logos/googlecloudlogo.png",
+            "site": "https://https://en.wikipedia.org/wiki/SQL"
+        },
+        {
+            "name": "Github",
+            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "image": "/images/logos/githublogo.png",
             "site": "https://https://en.wikipedia.org/wiki/SQL"
         }
     ]

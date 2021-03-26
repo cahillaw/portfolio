@@ -2,6 +2,8 @@ import React from 'react'
 
 import { Container, Row, Col, Form, Card, Button, CardColumns, CardDeck, CardGroup } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { Footer } from '../components/footer';
+
 import './css/projects.css'
 
 import puzzlesjson from "../json/projects.json"
@@ -37,7 +39,7 @@ class Projects extends React.Component {
     render = () => {
 
     return (
-        <div>
+        <div className="content">
         <div className="banner"></div>
             <Container className="pagelayout">
                 <Row>
@@ -88,6 +90,8 @@ class Projects extends React.Component {
                 </Row>
 
             </Container>
+            <Footer/>
+
         </div>
       )
     }
