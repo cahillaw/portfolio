@@ -34,24 +34,23 @@
         },
         {
             "projectId": 2,
-            "name": "Num2",
-            "description": "cool",
-            "timeStart": "January 2020",
-            "timeEnd": "February 2021", 
+            "name": "Misinformation Escape Room",
+            "description": "Online escape room sponsored by the University of Washington Center for an Informed Public (CIP) designed to teach groups of participants about misinformation in a fun and collaborative way.",
+            "timeStart": "January 2021",
+            "timeEnd": "Current", 
             "bullets": [
-                "swag",
-                "swag2,"
+                "Built in React, it consists of a series of five text and image based puzzles and a hub where participants can select the next puzzle. The site uses browser storage to save progress.",
+                "As I started working on the project half-way through the development process, I learned how to quickly familiarize myself with a new codebase in order to make accurate and efficient improvements.",
+                "Next steps include building a back-end to supporting metric tracking and a content mangement system to edit and create escape rooms."
             ],
+            "link": "https://www.lokisloop.org/",
             "tags" : [
-                "Go",
-                "Java"
+                "React"
             ],
             "images" : 
                 { 
-                    "main": "/images/hikelandscape.jpg",
+                    "main": "/images/lokisloopmain.png",
                     "gallery": [
-                        "/images/2",
-                        "/images/3"
                     ]
                     
                 } 
@@ -59,24 +58,27 @@
         },
         {
             "projectId": 3,
-            "name": "Num3",
-            "description": "num4",
-            "timeStart": "January 2020",
-            "timeEnd": "February 2020", 
+            "name": "Explore Groups Application",
+            "description": "Full-stack web application for UW students (organization restricted google OAuth) to create groups based around an interest - similar to Facebook groups.",
+            "timeStart": "October 2020",
+            "timeEnd": "December 2020", 
             "bullets": [
-                "swag",
-                "swag2,"
+                "Implemented group pages, group membership, blog posts, comments (& replies) on group pages and blog posts, group admin tools and more.",
+                "Stack consists of a Go back-end, React front-end and AWS for hosting.",
+                "Built as a developer in a software team with a project manager, designer and two developers."
             ],
             "tags" : [
                 "React",
-                "Go"
+                "Go",
+                "AWS",
+                "OAuth",
+                "Agile",
+                "Docker"
             ],
             "images" : 
                 { 
-                    "main": "/images/hikelandscape.jpg",
+                    "main": "/images/groupsmockup.png",
                     "gallery": [
-                        "/images/2",
-                        "/images/3"
                     ]
                     
                 } 
@@ -84,24 +86,24 @@
         },
         {
             "projectId": 4,
-            "name": "Num4",
-            "description": "swagdesc",
+            "name": "Microsoft Malware Detection",
+            "description": "Sponsored by a Microsoft Data Scientist; analysis of a large dataset of computers to predict which had malware.",
             "timeStart": "January 2020",
-            "timeEnd": "March 2020", 
+            "timeEnd": "June 2020", 
             "bullets": [
-                "swag",
-                "swag2 14,"
+                "Analyzed 8,000,000 computers (100+ variables) to determine which combinations of variables correlated with high malware infection rates.",
+                "Designed and implemented a 3rd-normal form database in Microsoft SQL Server and populated the database with the malware dataset.",
+                "Created stored procedures to calculate the chance of being infected based on different combinations of variables and looped through probable combinations.",
+                "Finalized the project with a PowerBI visualization dashboard to showcase our results."
             ],
             "tags" : [
-                "React",
-                "AWS"
+                "SQL",
+                "R"
             ],
             "images" : 
                 { 
-                    "main": "/images/hikelandscape.jpg",
+                    "main": "/images/malwaremain.png",
                     "gallery": [
-                        "/images/2",
-                        "/images/3"
                     ]
                     
                 } 
@@ -109,26 +111,95 @@
         },
         {
             "projectId": 5,
-            "name": "Num5",
-            "description": "5",
+            "name": "Team Fortress 2 Economic Analysis ",
+            "description": "Analysis of the relationship between Team Fortress 2 concurrent player count and item prices.",
             "timeStart": "January 2020",
-            "timeEnd": "February 2020", 
+            "timeEnd": "March 2020", 
             "bullets": [
-                "swag",
-                "swag3,"
+                "Pricing data was gathered by scraping 94,000 backpack.tf “suggestions” (price changes) using R. The data was put into a small relational database in Microsoft SQL Server and grouped by month to determine the average item price for each month.",
+                "Pricing data was then combined with TF2 concurrent player count data from steamcharts.com and a linear regression was done to determine the relationship.",
+                "The regression indicated a weak to moderate positive correlation (r = .375, p = 0.03)"
             ],
             "tags" : [
-                "AWS",
-                "Go",
-                "Docker",
+                "R",
+                "SQL"
+            ],
+            "images" : 
+                { 
+                    "main": "/images/TF2economic.png",
+                    "gallery": [
+                    ]
+                    
+                } 
+            
+        },
+        {
+            "projectId": 6,
+            "name": "Statify",
+            "description": "Web application that displays stats of Spotify songs, albums, and playlists.",
+            "timeStart": "May 2019",
+            "timeEnd": "June 2019", 
+            "bullets": [
+                "Created using R's shinyapp, the web application uses the Spotify API to display and graph information of the user's choice.",
+                "Modules include a playlist stats section that displays the distribution of track tempo, key and length in either a country’s top charts or a custom playlist of the users choice and a section that shows the average tempo, average key and a list of the tracks in the playlist."
+            ],
+            "link": "https://cahillaw.shinyapps.io/Statify/",
+            "tags" : [
                 "R"
             ],
             "images" : 
                 { 
-                    "main": "/images/hikelandscape.jpg",
+                    "main": "/images/statifymain.png",
                     "gallery": [
-                        "/images/2",
-                        "/images/3"
+                    ]
+                    
+                } 
+            
+        },
+        {
+            "projectId": 7,
+            "name": "Backpack.tf Listing Management Script",
+            "description": "Script for backpack.tf (virtual item trading website for the video game Team Fortress 2) that updates my listings.",
+            "timeStart": "March 2020",
+            "timeEnd": "July 2020", 
+            "bullets": [
+                "Written in R, the script runs through 1,500 buy listings and uses the backpack.tf API to update my price based on the listings of others.",
+                "Allows me to create a low and high price for items I want to buy, and updates my price to beat other buyers within the specified price range every 12 hours.",
+                "Hosted on AWS using a RStudio docker container, the script has 24/7 uptime and can be updated from the cloud."
+            ],
+            "tags" : [
+                "R",
+                "AWS",
+                "Docker"
+            ],
+            "images" : 
+                { 
+                    "main": "/images/ocbplistings.png",
+                    "gallery": [
+                    ]
+                    
+                } 
+            
+        },
+        {
+            "projectId": 8,
+            "name": "LettuceEat",
+            "description": "Web application that allows users to search for recipes and see nutritional information.",
+            "timeStart": "October 2019",
+            "timeEnd": "November 2019", 
+            "bullets": [
+                "Created using React including React Router, HTML and CSS. Uses two APIs, one for recipes and the other for nutritional calculations.",
+                "Users can edit recipes and save them to view later. (using local storage) Nutritional information is recalculated based on these changes."
+            ],
+            "link": "https://team10-challenge9.cameronastor.now.sh/",
+            "tags" : [
+                "React"
+            ],
+            "images" : 
+                { 
+                    "main": "/images/lettuceeat.png",
+                    "gallery": [
+
                     ]
                     
                 } 

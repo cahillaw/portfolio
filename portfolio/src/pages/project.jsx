@@ -27,7 +27,7 @@ class Project extends React.Component {
     render = () => {
       if(this.state.project != "") {
           return (
-            <div>
+            <div className="content">
                 <div className="banner"></div>
                 <Container className="pagelayout" fluid>
                     <Row className = "breadrow">
@@ -65,6 +65,7 @@ class Project extends React.Component {
                             })}
                         </Col>
                     </Row>
+                    {this.state.project.images.gallery.length > 0 ? 
                     <Row className="galleryrow">
                         <Col sm={12}>
                             <h3>Gallery</h3>
@@ -78,6 +79,7 @@ class Project extends React.Component {
                             </CardColumns>
                         </Col>
                     </Row>
+                    : null}
                 </Container>
             </div>
           )

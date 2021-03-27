@@ -2,69 +2,63 @@
     "skills" : [
         {
             "name": "React",
-            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. I am experienced building complex multi-page applications using React Router and can connect a back-end to my React applications with ease. The majority of my web applications use React for the front-end.",
             "image": "/images/logos/reactlogo.png",
             "site": "https://reactjs.org"
         },
         {
             "name": "Go",
-            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "description": "Go is the back-end language I have the most experience in. I am skilled in creating RESTful APIs that can seemlessly connect the front-end to the database. In addition, I have built complex features such as accounts, comments & comment replys and Oauth integration into my Go backends.",
             "image": "/images/logos/gologo.png",
             "site": "https://golang.org"
         },
         {
             "name": "SQL",
-            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "description": "SQL is my favorite way to build a database. I am well-versed in all parts of the process, from building the database schema in 3rd-normal form from the necessary requirements to creating stored procedures and functions to make the database easier to use. The main way I use SQL is through Microsoft SQL Server.",
             "image": "/images/logos/sqllogo.png",
             "site": "https://https://en.wikipedia.org/wiki/SQL"
         },
         {
             "name": "Python",
-            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "description": "Python is my favorite language for building small scripts that interact with various public APIs. In addition, it is my go-to language for data science, utilizing tools such as Numpy, Pandas, Scikit-learn and Beautiful Soup.",
             "image": "/images/logos/pythonlogo.png",
-            "site": "https://https://en.wikipedia.org/wiki/SQL"
+            "site": "https://www.python.org/"
         },
         {
             "name": "AWS",
-            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "description": "Amazon Web Services is my go-to cloud provider for hosting my back-ends. Utilizing EC2 instances to run my Docker containers, I can get my sites up and running within the hour. I am also experienced in using Route 54 to configure a custom domain name with the correct DNS settings.",
             "image": "/images/logos/awslogo.png",
-            "site": "https://https://en.wikipedia.org/wiki/SQL"
+            "site": "https://aws.amazon.com/"
         },
         {
             "name": "Docker",
-            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "description": "Docker is my favorite way to containerize my code to deploy to the cloud. I am experienced in deploying Go, MySQL and R containers and can connect them together in multi-container applications.",
             "image": "/images/logos/dockerlogo.png",
-            "site": "https://https://en.wikipedia.org/wiki/SQL"
+            "site": "https://www.docker.com/"
         },
         {
             "name": "R",
-            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "description": "R is another favorite of mine for small scripts that utilize various public APIs. I am also experienced in using it for data cleaning, web scraping and other tasks that are necessary parts of larger projects.",
             "image": "/images/logos/rlogo.png",
-            "site": "https://https://en.wikipedia.org/wiki/SQL"
+            "site": "https://www.r-project.org/"
         },
         {
             "name": "Java",
-            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "description": "Java was my first programming language, and the skills I learned from it made learning new languages much easier. Java taught me object-orientated programming, data structures like stacks, linked-lists and trees and exposed me to topics such as recursion. In addition, I am experienced in implementing various search, sorting and graph algorithms in Java.",
             "image": "/images/logos/javalogo.png",
-            "site": "https://https://en.wikipedia.org/wiki/SQL"
+            "site": "https://www.java.com/"
         },
         {
             "name": "MySQL",
-            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "description": "MySQL is my go-to database for building server side infrastructure. Easily containerized and connected to the back-end, MySQL allows me to use my SQL skills to build efficent and future-proof back-ends for my applications.",
             "image": "/images/logos/mysqllogo.png",
-            "site": "https://https://en.wikipedia.org/wiki/SQL"
-        },
-        {
-            "name": "Google Cloud",
-            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
-            "image": "/images/logos/googlecloudlogo.png",
-            "site": "https://https://en.wikipedia.org/wiki/SQL"
+            "site": "https://www.mysql.com/"
         },
         {
             "name": "Github",
-            "description": "React is my go-to front-end framework. With its system of reusable components with states, React makes making modern web applications enjable and easy. The majority of my web applications use React for the front-end.",
+            "description": "Github is my go-to source control and colaboration tool, and I am experienced in utilizing multiple branches, merging and using pull requests. Many of my applications use continuous integration through Github, automatically pushing new changes to the live site with a commit to the specified branch.",
             "image": "/images/logos/githublogo.png",
-            "site": "https://https://en.wikipedia.org/wiki/SQL"
+            "site": "https://github.com/"
         }
     ]
 }
