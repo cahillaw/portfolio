@@ -3,6 +3,7 @@
     position: absolute;
     max-width: unset;
     padding-top: 10px;
+    bottom: 0;
 }
 
 .shortfootercontainer {

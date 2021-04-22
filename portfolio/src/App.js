@@ -13,6 +13,7 @@ import Project from './pages/project';
 class App extends React.Component {
   render = () => {
     return <Router>
+      <div className="page-container">
       <NavBar/>
       <Switch>
         <Route exact path = "/" component={Home} />
@@ -23,6 +24,7 @@ class App extends React.Component {
         <Redirect to ="/"/>
       </Switch>
       <Footer/>
+      </div>
       </Router>
   }
 }

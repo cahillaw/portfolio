@@ -26,7 +26,7 @@
         },
         {
             "name": "AWS",
-            "description": "Amazon Web Services is my go-to cloud provider for hosting my back-ends. Utilizing EC2 instances to run my Docker containers, I can get my sites up and running within the hour. I am also experienced in using Route 54 to configure a custom domain name with the correct DNS settings.",
+            "description": "Amazon Web Services is my go-to cloud provider for hosting my back-ends. Utilizing EC2 instances to run my Docker containers, I can get my sites up and running within the hour. I am also experienced in using Route 53 to configure a custom domain with correct DNS settings.",
             "image": "/images/logos/awslogo.png",
             "site": "https://aws.amazon.com/"
         },

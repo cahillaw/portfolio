@@ -77,7 +77,7 @@ class Projects extends React.Component {
                                         {project.description}
                                         </Card.Text>
                                         <Link to = {'/projects/' + project.projectId}>
-                                        <Button variant="primary">View More</Button>
+                                        <Button variant="dark" className="button" >View More</Button>
                                         </Link>
                                         </Card.Body>
                                     </Card>

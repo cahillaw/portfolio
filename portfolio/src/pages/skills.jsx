@@ -55,7 +55,6 @@ class Skills extends React.Component {
                         <Card.Text>
                           {this.state.current.description}
                         </Card.Text>
-                        <a href={this.state.current.site}><Button variant="primary">View more</Button></a>
                       </Card.Body>
                     </Card>
                     <br></br>
@@ -65,8 +64,6 @@ class Skills extends React.Component {
           </div>
       )
     }
-
-   // executeScroll = () => myRef.current.scrollIntoView()    
 
     setCurrentSkill = (name) => {
       if(window.innerWidth < 768) {

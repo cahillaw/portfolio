@@ -31,10 +31,12 @@
 .pagelayout {
   max-width: 1300px;
   margin-top: 25px;
+  padding-bottom: 40px;
 }
 
-.content {
-  min-height: 79.3vh;
+.page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
 @keyframes App-logo-spin {

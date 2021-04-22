@@ -2,7 +2,6 @@
     margin-top: 15px;
 }
 
-
 .filters {
     margin-top: 20px;
     margin-left: unset;
@@ -24,6 +23,18 @@
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;   
+}
+
+.button {
+    color: #fff;
+    background-color: #096ccf;
+    border-color: #096ccf;
+}
+
+.button:hover, .button:focus, .button:active, .button.active {
+    color: #fff;
+    background-color: #0c49ce;
+    border-color: #0c49ce; /*set the color you want here*/
 }
 
 .projcarddeck {
