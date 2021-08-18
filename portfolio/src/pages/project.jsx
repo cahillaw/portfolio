@@ -80,6 +80,7 @@ class Project extends React.Component {
                         </Col>
                     </Row>
                     : null}
+                    <br></br>
                 </Container>
             </div>
           )

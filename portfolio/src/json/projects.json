@@ -37,11 +37,11 @@
             "name": "Misinformation Escape Room",
             "description": "Online escape room sponsored by the University of Washington Center for an Informed Public (CIP) designed to teach groups of participants about misinformation in a fun and collaborative way.",
             "timeStart": "January 2021",
-            "timeEnd": "Current", 
+            "timeEnd": "May 2021", 
             "bullets": [
-                "Built in React, it consists of a series of five text and image based puzzles and a hub where participants can select the next puzzle. The site uses browser storage to save progress.",
-                "As I started working on the project half-way through the development process, I learned how to quickly familiarize myself with a new codebase in order to make accurate and efficient improvements.",
-                "Next steps include building a back-end to supporting metric tracking and a content mangement system to edit and create escape rooms."
+                "Built in React, it consists of a series of five component based puzzles and a hub where participants can select the next puzzle. The site uses browser storage to save progress.",
+                "Added an admin dashboard with d3.js and chart.js visualizations displaying stats for each puzzle",
+                "The escape room has been played in libraries across Washington State, and was recently shown off at MozFest 2021"
             ],
             "link": "https://www.lokisloop.org/",
             "tags" : [
@@ -51,6 +51,8 @@
                 { 
                     "main": "/images/lokisloopmain.png",
                     "gallery": [
+                        "/images/lokisloopdashboard.png",
+                        "/images/lokislobby.png"
                     ]
                     
                 } 
