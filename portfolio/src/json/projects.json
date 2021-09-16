@@ -1,7 +1,7 @@
 {
     "projects" : [
         {
-            "projectId": 1,
+            "projectId": 8,
             "name": "SmartShuffle.io",
             "description": "SmartShuffle is a web application that allows Spotify users to create custom radio stations that let users better control how they shuffle music.",
             "timeStart": "July 2020",
@@ -33,7 +33,7 @@
             
         },
         {
-            "projectId": 2,
+            "projectId": 7,
             "name": "Misinformation Escape Room",
             "description": "Online escape room sponsored by the University of Washington Center for an Informed Public (CIP) designed to teach groups of participants about misinformation in a fun and collaborative way.",
             "timeStart": "January 2021",
@@ -59,7 +59,7 @@
             
         },
         {
-            "projectId": 3,
+            "projectId": 6,
             "name": "Explore Groups Application",
             "description": "Full-stack web application for UW students (organization restricted google OAuth) to create groups based around an interest - similar to Facebook groups.",
             "timeStart": "October 2020",
@@ -86,7 +86,7 @@
             
         },
         {
-            "projectId": 4,
+            "projectId": 5,
             "name": "Microsoft Malware Detection",
             "description": "Sponsored by a Microsoft Data Scientist; analysis of a large dataset of computers to predict which had malware.",
             "timeStart": "January 2020",
@@ -111,7 +111,7 @@
             
         },
         {
-            "projectId": 5,
+            "projectId": 4,
             "name": "Team Fortress 2 Economic Analysis ",
             "description": "Analysis of the relationship between Team Fortress 2 concurrent player count and item prices.",
             "timeStart": "January 2020",
@@ -135,7 +135,7 @@
             
         },
         {
-            "projectId": 6,
+            "projectId": 2,
             "name": "Statify",
             "description": "Web application that displays stats of Spotify songs, albums, and playlists.",
             "timeStart": "May 2019",
@@ -158,7 +158,7 @@
             
         },
         {
-            "projectId": 7,
+            "projectId": 3,
             "name": "Backpack.tf Listing Management Script",
             "description": "Script for backpack.tf (virtual item trading website for the video game Team Fortress 2) that updates my listings.",
             "timeStart": "March 2020",
@@ -183,7 +183,7 @@
             
         },
         {
-            "projectId": 8,
+            "projectId": 1,
             "name": "LettuceEat",
             "description": "Web application that allows users to search for recipes and see nutritional information.",
             "timeStart": "October 2019",
@@ -201,6 +201,31 @@
                     "main": "/images/lettuceeat.png",
                     "gallery": [
 
+                    ]
+                    
+                } 
+            
+        },
+        {
+            "projectId":9,
+            "name": "MTGCollection",
+            "description": "Web service that allows Magic: the Gathering players to track their collection value in in a visually simple way.",
+            "timeStart": "August 2021",
+            "timeEnd": "Present",
+            "bullets": [
+                "Currently in development, screenshots shown are early front-end views using mock data.",
+                "Planned features include inventory history graph, trade/buy/sell transaction and transaction history, card price changes over time (7 day/1 month/6 months/ 1 year/ custom timeframe) and inventory tagging to track the price of different groups of cards over time.",
+                "Front-end is built in React, back-end is TBD.",
+                "Current timeframe is to have a working build by 2022 to start a closed beta."
+            ],
+            "tags" : [
+                "React"
+            ],
+            "images" : 
+                { 
+                    "main": "/images/mtgcollection1.png",
+                    "gallery": [
+                        "/images/mtgcollection2.png"
                     ]
                     
                 } 

@@ -24,11 +24,12 @@ class Projects extends React.Component {
         const { projects } = puzzlesjson
 
         const tagsSet = new Set()
-        projects.map((project) => {
+        projects.sort((a,b)=>b.projectId-a.projectId).map((project) => {
             project.tags.map((tag) => {
                 tagsSet.add(tag)
             })
         })
+
         var tags = Array.from(tagsSet);
         this.setState({
             projects: projects,
